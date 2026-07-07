@@ -183,9 +183,9 @@
     color:var(--ink-45);text-align:left;padding:14px 16px;background:var(--paper-2);border-bottom:1px solid var(--line)}
   #tbrx-instrument tbody td{padding:13px 16px;border-bottom:1px solid var(--line-2);font-variant-numeric:tabular-nums}
   #tbrx-instrument tbody tr:last-child td{border-bottom:0}
-  #tbrx-instrument tbody td:first-child{font-weight:700}
-  #tbrx-instrument td .opt{color:var(--gold-deep);font-weight:700;font-family:var(--mono);font-size:13.5px}
-  #tbrx-instrument td .lab{color:var(--ink-45);font-family:var(--mono);font-size:13.5px}
+  #tbrx-instrument tbody td:first-child{font-weight:700;white-space:nowrap}
+  #tbrx-instrument td.opt{color:var(--gold-deep);font-weight:700;font-family:var(--mono);font-size:13.5px;white-space:nowrap}
+  #tbrx-instrument td.lab{color:var(--ink-45);font-family:var(--mono);font-size:13.5px;white-space:nowrap}
   #tbrx-instrument .tbl-cap{font-size:11.5px;color:var(--ink-45);padding:11px 16px;background:var(--paper-2);border-top:1px solid var(--line)}
 
   /* callout */
@@ -240,10 +240,12 @@
     #tbrx-instrument thead th:nth-child(4), #tbrx-instrument tbody td:nth-child(4){display:none}
   }
 
-/* Age control on one line + mobile-responsive */
+/* Age control on one line + mobile */
 #tbrx-instrument #ageCtl{display:flex;align-items:center;gap:12px;flex-wrap:nowrap}
 #tbrx-instrument #ageCtl > label{margin:0;flex:0 0 auto;white-space:nowrap}
 #tbrx-instrument #ageCtl .age-row{flex:1 1 auto;display:flex;align-items:center;gap:10px;min-width:0;margin:0}
 #tbrx-instrument #ageCtl .age-row input[type=range]{flex:1 1 auto;min-width:60px}
 #tbrx-instrument #ageCtl .age-val{flex:0 0 auto;white-space:nowrap}
 @media(max-width:600px){#tbrx-instrument #ageCtl{gap:8px}#tbrx-instrument #ageCtl > label{font-size:12px}}
+/* navbar clearance for the page top */
+#tbrx-instrument{padding-top:48px}

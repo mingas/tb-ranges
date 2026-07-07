@@ -70,7 +70,7 @@
       <div class="ftcard" id="ftCard" hidden>
         <div class="k">Don't have your free testosterone?</div>
         <p>Free T is calculated from total testosterone, SHBG and albumin — not measured directly. Get yours in one step with our calculator, then type it above to see where it falls.</p>
-        <a href="/free-testosterone-calculator">Open the Free Testosterone Calculator →</a>
+        <a href="/testosterone-test">Open the Free Testosterone Calculator →</a>
       </div>
 
       <div class="verdict s-sub" id="verdict" role="status" aria-live="polite" aria-atomic="true">
@@ -84,7 +84,7 @@
 
       <div class="next">
         <a class="step" href="#book"><span class="k">The book · Ch 2</span><span class="t">Read your full blood panel</span></a>
-        <a class="step" href="/free-testosterone-calculator"><span class="k">Go deeper</span><span class="t">Calculate free testosterone</span></a>
+        <a class="step" href="/testosterone-test"><span class="k">Go deeper</span><span class="t">Calculate free testosterone</span></a>
         <a class="step" href="/recommends/medichecks"><span class="k">Get tested</span><span class="t">Order a morning panel</span></a>
       </div>
 
@@ -130,7 +130,7 @@
         <div class="k">Free testosterone calculator</div>
         <h3>Have your total T, SHBG and albumin?</h3>
         <p>Free testosterone is best <em>calculated</em> from total T, SHBG and albumin using the validated Vermeulen equation — not measured directly, which is unreliable on most assays. Our calculator does it in one step.</p>
-        <a href="/free-testosterone-calculator">Calculate free testosterone →</a>
+        <a href="/testosterone-test">Calculate free testosterone →</a>
       </div>
     </section>
 
