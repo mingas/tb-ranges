@@ -1,4 +1,17 @@
-(function(){var m=document.getElementById('tbrx-instrument');if(m){m.innerHTML=`<section class="panel" aria-label="Testosterone range instrument">
+(function(){var m=document.getElementById('tbrx-instrument');if(m){m.innerHTML=`<div class="wrap"><header class="hero">
+    <div class="eyebrow">Bloodwork reference · Men</div>
+    <h1>Testosterone levels by age:<br><em>normal</em> isn't the same as <em>optimal.</em></h1>
+    <p class="lede">The standard lab range covers every man from 19 to 80. Set your age and your result to see the range that actually fits you — and the gap most doctors never mention.</p>
+    <p class="byline">A reference companion to <em>The Testosterone Blueprint</em> · Chapter 2 · Published by The Testosterone Blueprint</p>
+    <div class="trust">
+      <span class="pill">Reference range: Endocrine Society</span>
+      <span class="pill">ng/dL &amp; nmol/L</span>
+      <span class="pill">Fully sourced</span>
+      <span class="pill">Reviewed Jul 2026</span>
+    </div>
+  </header>
+
+  <section class="panel" aria-label="Testosterone range instrument">
     <div class="tabs" role="tablist">
       <button class="tab" role="tab" id="tab-total" data-mk="total" aria-controls="panel-total" aria-selected="true">Total Testosterone</button>
       <button class="tab" role="tab" data-mk="free" aria-controls="panel-total" aria-selected="false">Free Testosterone</button>
@@ -77,7 +90,109 @@
 
       <p class="note"><b>How to read this.</b> The grey band is the standard lab range for your age; the gold band is the functional target where most men feel their best; the dashed line marks 264 ng/dL, below which the Endocrine Society considers testosterone low. Type your own result to place the needle.</p>
     </div>
-  </section>`;}})();
+  </section>
+
+  <article>
+
+    <section class="blk">
+      <div class="kicker">The gap nobody mentions</div>
+      <h2 class="h2">"Your levels are fine" — the four most misleading words in men's health</h2>
+      <p>Most men who get their testosterone checked are handed a single number and told it's "normal." What they're rarely told is how wide that normal is. The standardised reference range spans healthy men from their late teens to old age, so a result can sit comfortably inside it and still be low <strong>for you, at your age</strong>.</p>
+      <p>This is why a man in his forties can tick every box for low testosterone — flat energy, no drive, poor recovery, low mood — and be reassured that nothing is wrong. His total testosterone cleared the lab minimum. It just didn't clear the level his body actually runs well on.</p>
+      <p>The tool above makes that visible. The <strong>optimal band is narrow, and it sits high inside the wide lab range</strong> — exactly where most "normal but not well" results fall short.</p>
+    </section>
+
+    <section class="blk">
+      <div class="kicker">The numbers</div>
+      <h2 class="h2">Testosterone levels by age</h2>
+      <p>The internationally harmonised normal range for healthy men aged 19–39 is <strong>264–916 ng/dL (9.2–31.8 nmol/L)</strong>, established across US and European cohorts and adopted by the Endocrine Society.<sup class="cit"><a href="#sources">1</a></sup> Below 264 ng/dL is considered low. The functional optimal columns below are the targets used in <em>The Testosterone Blueprint</em><sup class="cit"><a href="#sources">7</a></sup> — the level most men in each decade feel best at, not an official reference range.</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Age</th><th>Standard lab range</th><th>Functional optimal</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td>19–29</td><td class="lab">264–1,200</td><td class="opt">700–950</td><td>Peak years. Low readings here warrant investigation.</td></tr>
+            <tr><td>30–39</td><td class="lab">264–1,100</td><td class="opt">600–850</td><td>The ~1%/year decline begins. Lifestyle shows most.</td></tr>
+            <tr><td>40–49</td><td class="lab">264–1,000</td><td class="opt">500–750</td><td>Symptoms often appear. Free T matters more.</td></tr>
+            <tr><td>50–59</td><td class="lab">264–950</td><td class="opt">400–650</td><td>SHBG rises. Always test free T alongside total.</td></tr>
+            <tr><td>60+</td><td class="lab">264–900</td><td class="opt">350–550</td><td>"Normal" total can still be suboptimal for quality of life.</td></tr>
+          </tbody>
+        </table>
+        <div class="tbl-cap">Values in ng/dL. Multiply by 0.0347 for nmol/L. Lab lower bound = harmonised "low" threshold (Endocrine Society); optimal ranges from <em>The Testosterone Blueprint</em>, Ch. 2. Interpret with a clinician.</div>
+      </div>
+    </section>
+
+    <section class="blk">
+      <div class="kicker">Why one number lies</div>
+      <h2 class="h2">Total, free, and SHBG — the number that actually matters</h2>
+      <p>Roughly 98% of your testosterone is bound to proteins — mostly SHBG (sex hormone-binding globulin) and albumin — and is biologically inactive. Only the remaining <strong>~2%, "free" testosterone</strong>, can enter cells and do its work on muscle, brain, drive and mood.<sup class="cit"><a href="#sources">6</a></sup></p>
+      <p>That's the catch. When SHBG is high, a man can have a perfectly normal <em>total</em> testosterone while his <em>free</em> testosterone runs low — every symptom, a "normal" result. SHBG also rises with age,<sup class="cit"><a href="#sources">5</a></sup> which is why total testosterone alone tells you less the older you get. If your total sits below optimal, testing free T and SHBG is the logical next step.</p>
+      <div class="callout">
+        <div class="k">Free testosterone calculator</div>
+        <h3>Have your total T, SHBG and albumin?</h3>
+        <p>Free testosterone is best <em>calculated</em> from total T, SHBG and albumin using the validated Vermeulen equation — not measured directly, which is unreliable on most assays. Our calculator does it in one step.</p>
+        <a href="/free-testosterone-calculator">Calculate free testosterone →</a>
+      </div>
+    </section>
+
+    <section class="blk">
+      <div class="kicker">Do it right</div>
+      <h2 class="h2">How to test — so the number means something</h2>
+      <p>Testosterone follows a daily rhythm: it peaks in the morning and falls through the day, so an afternoon reading can run <strong>20–25% lower</strong> than a morning one in younger men — an effect that shrinks with age.<sup class="cit"><a href="#sources">4</a></sup> Get the sample drawn between <strong>7am and 10am, after an overnight fast</strong>.</p>
+      <p>And never act on a single result. Levels move with illness, sleep, alcohol and stress, so a low reading should always be confirmed with a repeat test before any conclusion<sup class="cit"><a href="#sources">3</a></sup> — and interpreted alongside your symptoms, free T and SHBG, not in isolation.</p>
+    </section>
+
+    <section class="blk faq">
+      <div class="kicker">Common questions</div>
+      <h2 class="h2">Testosterone by age: FAQ</h2>
+      <details open><summary>What is a normal testosterone level by age?<span class="ic"></span></summary>
+        <div class="a">The harmonised normal range for healthy men aged 19–39 is 264–916 ng/dL (9.2–31.8 nmol/L), from Travison et al. and adopted by the Endocrine Society. Below 264 ng/dL is considered low. Age-specific lab ranges vary slightly by laboratory and assay, which is why standardised ranges exist.</div>
+      </details>
+      <details><summary>What's the difference between "normal" and "optimal"?<span class="ic"></span></summary>
+        <div class="a">Normal is the statistical lab range — where most men fall. Optimal is the narrower band where men tend to feel their best for their age. A result can sit inside the lab range yet be low for your age, which is why symptoms appear despite a "normal" result.</div>
+      </details>
+      <details><summary>Should I test free testosterone too?<span class="ic"></span></summary>
+        <div class="a">Often, yes. Only about 2% of testosterone is free and active. A normal total can hide a low free testosterone when SHBG is high. Testing total, free and SHBG together gives the fuller picture — and free T is best calculated, not measured directly.</div>
+      </details>
+      <details><summary>When should testosterone be tested?<span class="ic"></span></summary>
+        <div class="a">In the morning, ideally 7–10am, after an overnight fast, because levels peak early and drop through the day. Always confirm a low result with a repeat test, and interpret it alongside symptoms rather than in isolation.</div>
+      </details>
+    </section>
+
+    <section class="blk" id="book">
+      <div class="callout" style="background:linear-gradient(135deg,#12203a,#0c1626)">
+        <div class="k">The complete guide · Chapter 2</div>
+        <h3>Read your blood panel like a clinician.</h3>
+        <p><em>The Testosterone Blueprint</em> shows you which markers to track, the optimal ranges by age, how to read total, free T and SHBG together, and the exact questions to ask your doctor.</p>
+        <a href="/book">Get the book →</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="k">About these ranges</div>
+      <p><b>Where the numbers come from.</b> The standard lab range is the internationally harmonised reference interval established by Travison et al. and adopted by the Endocrine Society — chosen because it is cross-calibrated to work across laboratories and countries, unlike assay-specific local ranges. The dashed "low" marker at 264 ng/dL is the Endocrine Society's threshold for low testosterone.</p>
+      <p><b>What "optimal" means here.</b> The optimal bands are functional targets from <em>The Testosterone Blueprint</em> (Chapter 2) — the levels most men in each decade feel best at. They are <b>not</b> an official reference range, and we label them that way throughout. They are informed by the age-related decline and symptom patterns documented in the studies cited below.</p>
+      <p><b>The other markers.</b> Free testosterone is calculated (Vermeulen method), not measured directly; SHBG and oestradiol follow standard adult-male reference intervals — SHBG ~10–57 nmol/L (age-adjusted), oestradiol ~10–40 pg/mL on a sensitive assay. All vary by laboratory and assay, so compare against the range printed on your own report.</p>
+      <p><b>How we keep it honest.</b> Every physiological claim on this page is footnoted to a named source. Reference ranges vary by laboratory and assay, and a single result never tells the whole story — this page is educational and is not a diagnosis. We review the figures against current Endocrine Society and NHS guidance and update the "last reviewed" date accordingly.</p>
+    </section>
+
+    <section class="sources" id="sources">
+      <div class="k">Sources</div>
+      <ol>
+        <li>Travison TG, Vesper HW, Orwoll E, Wu F, Kaufman JM, Wang Y, et al. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5460736/" target="_blank" rel="noopener">Harmonized Reference Ranges for Circulating Testosterone Levels in Men of Four Cohort Studies in the United States and Europe</a>. <em>J Clin Endocrinol Metab.</em> 2017;102(4):1161–1173.</li>
+        <li>Endocrine Society. <a href="https://www.endocrine.org/news-and-advocacy/news-room/2017/landmark-study-defines-normal-ranges-for-testosterone-levels" target="_blank" rel="noopener">Landmark Study Defines Normal Ranges for Testosterone Levels</a>. 2017.</li>
+        <li>Bhasin S, Brito JP, Cunningham GR, et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. <em>J Clin Endocrinol Metab.</em> 2018;103(5):1715–1744.</li>
+        <li>Brambilla DJ, Matsumoto AM, Araujo AB, McKinlay JB. <a href="https://academic.oup.com/jcem/article/94/3/907/2596608" target="_blank" rel="noopener">Effect of Diurnal Variation on Clinical Measurement of Serum Testosterone and Other Sex Hormone Levels in Men</a>. <em>J Clin Endocrinol Metab.</em> 2009;94(3):907–913.</li>
+        <li>Feldman HA, Longcope C, Derby CA, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/11836290/" target="_blank" rel="noopener">Age Trends in the Level of Serum Testosterone and Other Hormones in Middle-Aged Men (Massachusetts Male Aging Study)</a>. <em>J Clin Endocrinol Metab.</em> 2002;87(2):589–598.</li>
+        <li>Vermeulen A, Verdonck L, Kaufman JM. A Critical Evaluation of Simple Methods for the Estimation of Free Testosterone in Serum. <em>J Clin Endocrinol Metab.</em> 1999;84(10):3666–3672.</li>
+        <li><em>The Testosterone Blueprint</em> (2026), Chapter 2: Reading Your Bloodwork (Table 1.3) — functional optimal ranges by age.</li>
+      </ol>
+      <div class="rev">Compiled, sourced and editorially reviewed by The Testosterone Blueprint · Last reviewed 6 July 2026</div>
+    </section>
+
+    <p class="disc"><b>Educational, not a diagnosis.</b> Standard ranges follow internationally harmonised reference intervals; optimal ranges reflect functional targets from <em>The Testosterone Blueprint</em> and are not official reference values. Levels vary by laboratory and assay. Always interpret results with a qualified clinician, especially before any treatment.</p>
+
+  </article>
+</div></div>`;}})();
 (function(){
   // ---- Marker configuration. Each marker's values are stored in its BASE unit (units[0]). ----
   // Sources: Total T reference — Travison 2017 / Endocrine Society; optimal — The Testosterone Blueprint.
