@@ -121,7 +121,7 @@
     font-family:var(--mono);font-size:9px;font-weight:500;letter-spacing:.08em;color:var(--clay)}
   #tbrx-instrument .needle{position:absolute;top:-8px;bottom:-8px;width:2px;background:var(--ink);z-index:5;transition:left .55s cubic-bezier(.3,.8,.25,1)}
   #tbrx-instrument .needle::after{content:"";position:absolute;bottom:-4px;left:50%;width:9px;height:9px;background:var(--ink);border-radius:50%;transform:translateX(-50%) rotate(45deg)}
-  #tbrx-instrument .readout{position:absolute;top:-46px;left:0;transform:translateX(-50%);font-family:var(--mono);font-weight:600;
+  #tbrx-instrument .readout{position:absolute;top:30px;left:0;transform:translateX(-50%);font-family:var(--mono);font-weight:600;
     font-size:14px;color:var(--paper);background:var(--ink);padding:5px 10px;border-radius:7px;white-space:nowrap;z-index:6;
     transition:left .55s cubic-bezier(.3,.8,.25,1);font-variant-numeric:tabular-nums}
   #tbrx-instrument .readout::after{content:"";position:absolute;bottom:-4px;left:50%;transform:translateX(-50%) rotate(45deg);width:8px;height:8px;background:var(--ink)}
@@ -240,7 +240,6 @@
     #tbrx-instrument thead th:nth-child(4), #tbrx-instrument tbody td:nth-child(4){display:none}
   }
 
-/* Age control on one line + mobile */
 #tbrx-instrument #ageCtl{display:flex;align-items:center;gap:12px;flex-wrap:nowrap}
 #tbrx-instrument #ageCtl > label{margin:0;flex:0 0 auto;white-space:nowrap}
 #tbrx-instrument #ageCtl .age-row{flex:1 1 auto;display:flex;align-items:center;gap:10px;min-width:0;margin:0}

@@ -217,8 +217,8 @@
       name:'Free Testosterone', sub:'Calculated (Vermeulen) \u00b7 adult men',
       note:'Calculated from total T, SHBG & albumin \u2014 not measured directly',
       units:[['ng/dL',1,0],['pmol/L',34.67,0]],
-      scale:[0,35], step:5, useAge:false, calc:true,
-      ref:[9,30], opt:[15,30], def:12,
+      scale:[0,35], step:5, useAge:true, calc:true,
+      ageBands:[[29,[9,30],[18,30],'19\u201329'],[39,[9,30],[16,28],'30s'],[49,[9,30],[14,26],'40s'],[59,[9,30],[12,23],'50s'],[999,[9,30],[11,21],'60+']], def:12,
       copy:{
         optimal:['Optimal free testosterone','The active fraction looks healthy.','This is the testosterone that actually reaches your tissues \u2014 a good sign your usable level matches your total.'],
         sub:['Low-normal free T','Often the real story.','Your total may look fine, but the free, active fraction is low \u2014 the classic picture when SHBG is high, and often what is behind \u201cnormal but not well\u201d.'],
@@ -246,8 +246,8 @@
       name:'Oestradiol', sub:'Sensitive/LC-MS assay \u00b7 adult men',
       note:'Needs a sensitive/LC-MS assay \u2014 standard assays misread male levels',
       units:[['pg/mL',1,0],['pmol/L',3.671,0]],
-      scale:[0,60], step:10, low:10, useAge:false,
-      ref:[10,40], opt:[20,30], def:18,
+      scale:[0,60], step:10, low:10, useAge:true,
+      ageBands:[[29,[10,40],[22,34],'19\u201329'],[39,[10,40],[20,32],'30s'],[49,[10,40],[18,30],'40s'],[59,[10,40],[17,28],'50s'],[999,[10,40],[15,26],'60+']], def:18,
       copy:{
         optimal:['Optimal oestradiol','Men need oestrogen too.','Oestradiol in the sweet spot supports bone density, libido, mood and heart health.'],
         sub:['Low-normal oestradiol','On the low side.','Very low E2 in men is linked to bone loss, joint pain and low libido \u2014 it is not \u201cbetter\u201d to be low.'],
@@ -347,3 +347,5 @@
 
   selectMarker('total');
 })();
+/* Deliver the ranges PDF when the Ranges Tool email form is submitted */
+(function(){var f=document.querySelector('#ranges-email form');if(f){f.addEventListener('submit',function(){window.open('https://cdn.jsdelivr.net/gh/mingas/tb-ranges@main/Testosterone-Optimal-Ranges-and-Blood-Test-Checklist.pdf','_blank');});}})();
