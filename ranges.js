@@ -304,13 +304,13 @@
     mName.textContent=c.name; mSub.textContent=c.sub;
     if(c.note){mNote.textContent=c.note; mNote.hidden=false;} else {mNote.hidden=true;}
     u1.textContent=c.units[0][0]; u1.setAttribute('aria-pressed','true');
-    if(c.units[1]){u2.textContent=c.units[1][0]; u2.setAttribute('aria-pressed','false'); unitCtl.hidden=false;}
-    else {unitCtl.hidden=true;}
+    if(c.units[1]){u2.textContent=c.units[1][0]; u2.setAttribute('aria-pressed','false'); unitCtl.style.display='';}
+    else {unitCtl.style.display='none';}
     unitTag.textContent=c.units[0][0];
-    ageCtl.hidden=!c.useAge;
+    ageCtl.style.display=c.useAge?'':'none';
     var showLow=(typeof c.low==='number');
     lowLine.style.display=showLow?'':'none'; if(lgLow)lgLow.style.display=showLow?'':'none';
-    ftCard.hidden=!c.calc;
+    ftCard.style.display=c.calc?'':'none';
     val.value=disp(base());
     buildTicks(); render();
   }

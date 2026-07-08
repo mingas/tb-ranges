@@ -101,13 +101,13 @@
 
   /* gauge */
   #tbrx-instrument .gauge{margin-top:30px}
-  #tbrx-instrument .legend{display:flex;gap:18px;margin-bottom:16px;flex-wrap:wrap}
+  #tbrx-instrument .legend{display:flex;gap:18px;margin-bottom:24px;flex-wrap:wrap}
   #tbrx-instrument .lg{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-70);font-weight:600}
   #tbrx-instrument .lg i{width:22px;height:9px;border-radius:2px}
   #tbrx-instrument .lg .l-lab{background:var(--lab-fill);border:1px solid var(--lab-edge)}
   #tbrx-instrument .lg .l-opt{background:var(--gold)}
   #tbrx-instrument .lg .l-low{width:2px;height:14px;background:var(--clay);border-radius:0}
-  #tbrx-instrument .lane-shell{position:relative;padding-top:52px}
+  #tbrx-instrument .lane-shell{position:relative;padding-top:66px}
   #tbrx-instrument .lane{position:relative;height:64px;border-radius:9px;border:1px solid var(--line);
     background:repeating-linear-gradient(90deg,transparent 0,transparent calc(10% - 1px),#f0e9d8 calc(10% - 1px),#f0e9d8 10%)}
   #tbrx-instrument .band{position:absolute;top:0;bottom:0;border-radius:7px;transition:left .5s cubic-bezier(.3,.8,.25,1),width .5s cubic-bezier(.3,.8,.25,1)}
@@ -247,5 +247,4 @@
 #tbrx-instrument #ageCtl .age-row input[type=range]{flex:1 1 auto;min-width:60px}
 #tbrx-instrument #ageCtl .age-val{flex:0 0 auto;white-space:nowrap}
 @media(max-width:600px){#tbrx-instrument #ageCtl{gap:8px}#tbrx-instrument #ageCtl > label{font-size:12px}}
-/* navbar clearance for the page top */
 #tbrx-instrument{padding-top:48px}
