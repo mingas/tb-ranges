@@ -85,7 +85,7 @@
       <div class="next">
         <a class="step" href="#book"><span class="k">The book · Ch 2</span><span class="t">Read your full blood panel</span></a>
         <a class="step" href="/testosterone-test"><span class="k">Go deeper</span><span class="t">Calculate free testosterone</span></a>
-        <a class="step" href="/recommends/medichecks"><span class="k">Get tested</span><span class="t">Order a morning panel</span></a>
+        <a class="step" href="/testosterone-blood-test#where-to-test"><span class="k">Get tested</span><span class="t">Order a morning panel</span></a>
       </div>
 
       <p class="note"><b>How to read this.</b> The grey band is the standard lab range for your age; the gold band is the functional target where most men feel their best; the dashed line marks 264 ng/dL, below which the Endocrine Society considers testosterone low. Type your own result to place the needle.</p>
