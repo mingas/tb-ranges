@@ -238,7 +238,19 @@
     #tbrx-instrument .controls{grid-template-columns:1fr;gap:20px;padding:18px}
     #tbrx-instrument .next{grid-template-columns:1fr}
     #tbrx-instrument article{margin-top:48px}
-    #tbrx-instrument thead th:nth-child(4), #tbrx-instrument tbody td:nth-child(4){display:none}
+    /* lentele -> korteles: 'Note' stulpelis nebeslepiamas, nulis horizontalios slinkties */
+    #tbrx-instrument .tbl-wrap{border:0;background:transparent;overflow-x:visible;margin:18px 0}
+    #tbrx-instrument .tbl-wrap thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+    #tbrx-instrument .tbl-wrap table,#tbrx-instrument .tbl-wrap tbody,
+    #tbrx-instrument .tbl-wrap tr,#tbrx-instrument .tbl-wrap td{display:block;width:auto}
+    #tbrx-instrument .tbl-wrap tr{border:1px solid var(--line);border-radius:14px;background:var(--card);
+      padding:16px 18px;margin-bottom:12px}
+    #tbrx-instrument .tbl-wrap td{border:0;padding:6px 0}
+    #tbrx-instrument .tbl-wrap td:before{content:attr(data-l);display:block;font-size:10px;letter-spacing:.09em;
+      text-transform:uppercase;color:var(--ink-45);margin-bottom:3px;font-family:var(--sans);font-weight:600}
+    #tbrx-instrument .tbl-wrap tbody td:first-child{font-size:17px;padding-top:0;white-space:nowrap}
+    #tbrx-instrument .tbl-wrap td:last-child{padding-bottom:0;white-space:normal}
+    #tbrx-instrument .tbl-cap{border:1px solid var(--line);border-radius:12px;margin-top:0}
   }
 
 #tbrx-instrument #ageCtl{display:flex;align-items:center;gap:12px;flex-wrap:nowrap}

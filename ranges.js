@@ -110,11 +110,11 @@
         <table>
           <thead><tr><th>Age</th><th>Standard lab range</th><th>Functional optimal</th><th>Note</th></tr></thead>
           <tbody>
-            <tr><td>19–29</td><td class="lab">264–1,200</td><td class="opt">700–950</td><td>Peak years. Low readings here warrant investigation.</td></tr>
-            <tr><td>30–39</td><td class="lab">264–1,100</td><td class="opt">600–850</td><td>The ~1%/year decline begins. Lifestyle shows most.</td></tr>
-            <tr><td>40–49</td><td class="lab">264–1,000</td><td class="opt">500–750</td><td>Symptoms often appear. Free T matters more.</td></tr>
-            <tr><td>50–59</td><td class="lab">264–950</td><td class="opt">400–650</td><td>SHBG rises. Always test free T alongside total.</td></tr>
-            <tr><td>60+</td><td class="lab">264–900</td><td class="opt">350–550</td><td>"Normal" total can still be suboptimal for quality of life.</td></tr>
+            <tr><td data-l="Age">19–29</td><td class="lab" data-l="Standard lab range">264–1,200</td><td class="opt" data-l="Functional optimal">700–950</td><td data-l="Note">Peak years. Low readings here warrant investigation.</td></tr>
+            <tr><td data-l="Age">30–39</td><td class="lab" data-l="Standard lab range">264–1,100</td><td class="opt" data-l="Functional optimal">600–850</td><td data-l="Note">The ~1%/year decline begins. Lifestyle shows most.</td></tr>
+            <tr><td data-l="Age">40–49</td><td class="lab" data-l="Standard lab range">264–1,000</td><td class="opt" data-l="Functional optimal">500–750</td><td data-l="Note">Symptoms often appear. Free T matters more.</td></tr>
+            <tr><td data-l="Age">50–59</td><td class="lab" data-l="Standard lab range">264–950</td><td class="opt" data-l="Functional optimal">400–650</td><td data-l="Note">SHBG rises. Always test free T alongside total.</td></tr>
+            <tr><td data-l="Age">60+</td><td class="lab" data-l="Standard lab range">264–900</td><td class="opt" data-l="Functional optimal">350–550</td><td data-l="Note">"Normal" total can still be suboptimal for quality of life.</td></tr>
           </tbody>
         </table>
         <div class="tbl-cap">Values in ng/dL. Multiply by 0.0347 for nmol/L. Lab lower bound = harmonised "low" threshold (Endocrine Society); optimal ranges from <em>The Testosterone Blueprint</em>, Ch. 2. Interpret with a clinician.</div>
