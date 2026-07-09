@@ -54,9 +54,12 @@
   #tbrx-instrument .tabs{display:flex;gap:2px;padding:9px 10px 0;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
   #tbrx-instrument .tabs::-webkit-scrollbar{display:none}
   #tbrx-instrument .tab{flex:0 0 auto;font-weight:700;font-size:13.5px;color:var(--ink-45);background:none;border:0;
-    padding:12px 14px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .18s}
+    padding:12px 14px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;
+    border-radius:9px 9px 0 0;transition:color .18s,background .18s}
   #tbrx-instrument .tab:hover:not(:disabled){color:var(--ink)}
-  #tbrx-instrument .tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--gold)}
+  #tbrx-instrument .tab[aria-selected="true"]{color:var(--ink);font-weight:800;
+    background:rgba(201,168,76,.16);border-bottom-color:var(--gold)}
+  #tbrx-instrument .tab:focus-visible{outline:2px solid var(--gold);outline-offset:-2px;border-radius:9px}
   #tbrx-instrument .tab:disabled{cursor:not-allowed;color:var(--ink-25)}
   #tbrx-instrument .tab .soon{font-family:var(--mono);font-size:9px;font-weight:500;letter-spacing:.1em;margin-left:6px;
     color:var(--ink-25);border:1px solid var(--ink-12);padding:1px 4px;border-radius:4px;vertical-align:middle}
@@ -251,6 +254,10 @@
     #tbrx-instrument .tbl-wrap tbody td:first-child{font-size:17px;padding-top:0;white-space:nowrap}
     #tbrx-instrument .tbl-wrap td:last-child{padding-bottom:0;white-space:normal}
     #tbrx-instrument .tbl-cap{border:1px solid var(--line);border-radius:12px;margin-top:0}
+    /* keturi tab'ai netelpa i viena eilute ties 390px -> 2 x 2, be horizontalios slinkties */
+    #tbrx-instrument .tabs{flex-wrap:wrap;overflow-x:visible;gap:6px 5px;padding:9px 8px 0}
+    #tbrx-instrument .tab{flex:1 1 calc(50% - 5px);min-width:0;padding:11px 6px;font-size:12.5px;
+      white-space:normal;text-align:center;line-height:1.25}
   }
 
 #tbrx-instrument #ageCtl{display:flex;align-items:center;gap:12px;flex-wrap:nowrap}
