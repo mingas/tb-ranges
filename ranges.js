@@ -147,13 +147,13 @@
       <div class="kicker">Common questions</div>
       <h2 class="h2">Testosterone by age: FAQ</h2>
       <details open><summary>What is a normal testosterone level by age?<span class="ic"></span></summary>
-        <div class="a">The harmonised normal range for healthy men aged 19–39 is 264–916 ng/dL (9.2–31.8 nmol/L), from Travison et al. and adopted by the Endocrine Society. Below 264 ng/dL is considered low. Age-specific lab ranges vary slightly by laboratory and assay, which is why standardised ranges exist.</div>
+        <div class="a">The harmonised normal range for healthy men aged 19–39 is 264–916 ng/dL (9.2–31.8 nmol/L), from Travison et al. and adopted by the Endocrine Society. Below 264 ng/dL is considered low. There is no harmonised range for older men, and lab ranges vary by laboratory and assay, so compare with the range on your own report.</div>
       </details>
       <details><summary>What's the difference between "normal" and "optimal"?<span class="ic"></span></summary>
-        <div class="a">Normal is the statistical lab range — where most men fall. Optimal is the narrower band where men tend to feel their best for their age. A result can sit inside the lab range yet be low for your age, which is why symptoms appear despite a "normal" result.</div>
+        <div class="a">Normal is the statistical lab range, where most healthy men fall. Optimal, as used on this page, is the narrower target band from <em>The Testosterone Blueprint</em> for each age group: a guide, not an official reference range. A result below it is not a problem on its own; what matters is your symptoms and a repeat morning test.</div>
       </details>
       <details><summary>Should I test free testosterone too?<span class="ic"></span></summary>
-        <div class="a">Often, yes. Only about 2% of testosterone is free and active. A normal total can hide a low free testosterone when SHBG is high. Testing total, free and SHBG together gives the fuller picture — and free T is best calculated, not measured directly.</div>
+        <div class="a">Often, yes. Only about 2% of testosterone is free and active. A normal total can hide a low free testosterone when SHBG is high. Testing total, free and SHBG together gives the fuller picture. Free T is usually calculated from total T, SHBG and albumin; equilibrium dialysis is the reference method, and the direct analog tests some labs use are unreliable.</div>
       </details>
       <details><summary>When should testosterone be tested?<span class="ic"></span></summary>
         <div class="a">In the morning, ideally 7–10am, after an overnight fast, because levels peak early and drop through the day. Always confirm a low result with a repeat test, and interpret it alongside symptoms rather than in isolation.</div>
