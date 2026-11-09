@@ -1,13 +1,13 @@
 (function(){var m=document.getElementById('tbrx-instrument');if(m){m.innerHTML=`<div class="wrap"><header class="hero">
     <div class="eyebrow">Bloodwork reference · Men</div>
     <h1>Testosterone levels by age:<br><em>normal</em> isn't the same as <em>optimal.</em></h1>
-    <p class="lede">The standard lab range covers every man from 19 to 80. Set your age and your result to see the range that actually fits you — and the gap most doctors never mention.</p>
+    <p class="lede">The standard lab range is one wide band for all adult men. Set your age and your result to see where you sit in it, and against the age-specific optimal targets used in <em>The Testosterone Blueprint</em>.</p>
     <p class="byline">A reference companion to <em>The Testosterone Blueprint</em> · Chapter 2 · Published by The Testosterone Blueprint</p>
     <div class="trust">
       <span class="pill">Reference range: Endocrine Society</span>
       <span class="pill">ng/dL &amp; nmol/L</span>
       <span class="pill">Fully sourced</span>
-      <span class="pill">Reviewed Jul 2026</span>
+      <span class="pill">Reviewed Nov 2026</span>
     </div>
   </header>
 
@@ -45,14 +45,16 @@
           <div class="seg" id="seg" role="group" aria-label="Units">
             <button id="u1" aria-pressed="true">ng/dL</button>
             <button id="u2" aria-pressed="false">nmol/L</button>
+            <button id="u3" aria-pressed="false" hidden>pmol/L</button>
           </div>
+          <div class="tbrx-hint" id="uHint" role="note" hidden></div>
         </div>
       </div>
 
       <div class="gauge">
         <div class="legend">
           <span class="lg"><i class="l-lab"></i> Reference range</span>
-          <span class="lg"><i class="l-opt"></i> Optimal range</span>
+          <span class="lg"><i class="l-opt"></i> Optimal target (Blueprint)</span>
           <span class="lg" id="lgLow"><i class="l-low"></i> "Low" threshold</span>
         </div>
         <div class="lane-shell">
@@ -69,7 +71,7 @@
 
       <div class="ftcard" id="ftCard" hidden>
         <div class="k">Don't have your free testosterone?</div>
-        <p>Free T is calculated from total testosterone, SHBG and albumin — not measured directly. Get yours in one step with our calculator, then type it above to see where it falls.</p>
+        <p>Free T is usually calculated from total testosterone, SHBG and albumin. Equilibrium dialysis is the reference method for measuring it; the direct "analog" tests some labs use are unreliable. Get a calculated value in one step with our calculator, then type it above to see where it falls.</p>
         <a href="/testosterone-test">Open the Free Testosterone Calculator →</a>
       </div>
 
@@ -88,7 +90,7 @@
         <a class="step" href="/testosterone-blood-test#where-to-test"><span class="k">Get tested</span><span class="t">Order a morning panel</span></a>
       </div>
 
-      <p class="note"><b>How to read this.</b> The grey band is the standard lab range for your age; the gold band is the functional target where most men feel their best; the dashed line marks 264 ng/dL, below which the Endocrine Society considers testosterone low. Type your own result to place the needle.</p>
+      <p class="note"><b>How to read this.</b> The grey band is the standard lab range for your age; the gold band is the optimal target used in <em>The Testosterone Blueprint</em>, which is a guide, not an official range; the dashed line marks the "low" threshold. Type your own result to place the needle.</p>
     </div>
   </section>
 
@@ -97,27 +99,27 @@
     <section class="blk">
       <div class="kicker">The gap nobody mentions</div>
       <h2 class="h2">"Your levels are fine" — the four most misleading words in men's health</h2>
-      <p>Most men who get their testosterone checked are handed a single number and told it's "normal." What they're rarely told is how wide that normal is. The standardised reference range spans healthy men from their late teens to old age, so a result can sit comfortably inside it and still be low <strong>for you, at your age</strong>.</p>
-      <p>This is why a man in his forties can tick every box for low testosterone — flat energy, no drive, poor recovery, low mood — and be reassured that nothing is wrong. His total testosterone cleared the lab minimum. It just didn't clear the level his body actually runs well on.</p>
-      <p>The tool above makes that visible. The <strong>optimal band is narrow, and it sits high inside the wide lab range</strong> — exactly where most "normal but not well" results fall short.</p>
+      <p>Most men who get their testosterone checked are handed a single number and told it's "normal." What they're rarely told is how wide that normal is. The standardised reference range spans healthy men from their late teens to old age, so a result can sit comfortably inside it and still be low <strong>for your age group</strong>.</p>
+      <p>This is why a man in his forties can tick every box for low testosterone — flat energy, no drive, poor recovery, low mood — and be reassured that nothing is wrong. His total testosterone cleared the lab minimum. Whether that level is right for him depends on his symptoms, a repeat morning test and his free testosterone, not on one number.</p>
+      <p>The tool above shows your result against both the wide lab range and the <strong>narrower optimal target for your age</strong>. The target is a guide, not a diagnosis: many men below it feel well, and treatment decisions rest on symptoms plus consistently low results.</p>
     </section>
 
     <section class="blk">
       <div class="kicker">The numbers</div>
       <h2 class="h2">Testosterone levels by age</h2>
-      <p>The internationally harmonised normal range for healthy men aged 19–39 is <strong>264–916 ng/dL (9.2–31.8 nmol/L)</strong>, established across US and European cohorts and adopted by the Endocrine Society.<sup class="cit"><a href="#sources">1</a></sup> Below 264 ng/dL is considered low. The functional optimal columns below are the targets used in <em>The Testosterone Blueprint</em><sup class="cit"><a href="#sources">7</a></sup> — the level most men in each decade feel best at, not an official reference range.</p>
+      <p>The internationally harmonised normal range for healthy men aged 19–39 is <strong>264–916 ng/dL (9.2–31.8 nmol/L)</strong>, established across US and European cohorts and adopted by the Endocrine Society.<sup class="cit"><a href="#sources">1</a></sup> Below 264 ng/dL is considered low. The functional optimal column below shows the targets used in <em>The Testosterone Blueprint</em><sup class="cit"><a href="#sources">7</a></sup> for each decade. They are a guide, not an official reference range.</p>
       <div class="tbl-wrap">
         <table>
           <thead><tr><th>Age</th><th>Standard lab range</th><th>Functional optimal</th><th>Note</th></tr></thead>
           <tbody>
-            <tr><td data-l="Age">19–29</td><td class="lab" data-l="Standard lab range">264–1,200</td><td class="opt" data-l="Functional optimal">700–950</td><td data-l="Note">Peak years. Low readings here warrant investigation.</td></tr>
-            <tr><td data-l="Age">30–39</td><td class="lab" data-l="Standard lab range">264–1,100</td><td class="opt" data-l="Functional optimal">600–850</td><td data-l="Note">The ~1%/year decline begins. Lifestyle shows most.</td></tr>
-            <tr><td data-l="Age">40–49</td><td class="lab" data-l="Standard lab range">264–1,000</td><td class="opt" data-l="Functional optimal">500–750</td><td data-l="Note">Symptoms often appear. Free T matters more.</td></tr>
-            <tr><td data-l="Age">50–59</td><td class="lab" data-l="Standard lab range">264–950</td><td class="opt" data-l="Functional optimal">400–650</td><td data-l="Note">SHBG rises. Always test free T alongside total.</td></tr>
-            <tr><td data-l="Age">60+</td><td class="lab" data-l="Standard lab range">264–900</td><td class="opt" data-l="Functional optimal">350–550</td><td data-l="Note">"Normal" total can still be suboptimal for quality of life.</td></tr>
+            <tr><td data-l="Age">19–29</td><td class="lab" data-l="Standard lab range">264–916</td><td class="opt" data-l="Functional optimal">700–916</td><td data-l="Note">Peak years. Low readings here warrant investigation.</td></tr>
+            <tr><td data-l="Age">30–39</td><td class="lab" data-l="Standard lab range">264–916</td><td class="opt" data-l="Functional optimal">600–850</td><td data-l="Note">The ~1%/year decline begins. Lifestyle shows most.</td></tr>
+            <tr><td data-l="Age">40–49</td><td class="lab" data-l="Standard lab range">264–916</td><td class="opt" data-l="Functional optimal">500–750</td><td data-l="Note">Symptoms often appear. Free T matters more.</td></tr>
+            <tr><td data-l="Age">50–59</td><td class="lab" data-l="Standard lab range">264–916</td><td class="opt" data-l="Functional optimal">400–650</td><td data-l="Note">SHBG rises. Always test free T alongside total.</td></tr>
+            <tr><td data-l="Age">60+</td><td class="lab" data-l="Standard lab range">264–916</td><td class="opt" data-l="Functional optimal">350–550</td><td data-l="Note">"Normal" total can still be suboptimal for quality of life.</td></tr>
           </tbody>
         </table>
-        <div class="tbl-cap">Values in ng/dL. Multiply by 0.0347 for nmol/L. Lab lower bound = harmonised "low" threshold (Endocrine Society); optimal ranges from <em>The Testosterone Blueprint</em>, Ch. 2. Interpret with a clinician.</div>
+        <div class="tbl-cap">Values in ng/dL. Multiply by 0.0347 for nmol/L. Lab range = harmonised reference interval (Travison et al.), defined in healthy non-obese men aged 19 to 39; there is no harmonised range for older men, so the same range is shown at every age. Optimal targets from <em>The Testosterone Blueprint</em>, Ch. 2. Interpret with a clinician.</div>
       </div>
     </section>
 
@@ -129,7 +131,7 @@
       <div class="callout">
         <div class="k">Free testosterone calculator</div>
         <h3>Have your total T, SHBG and albumin?</h3>
-        <p>Free testosterone is best <em>calculated</em> from total T, SHBG and albumin using the validated Vermeulen equation — not measured directly, which is unreliable on most assays. Our calculator does it in one step.</p>
+        <p>Free testosterone is usually <em>calculated</em> from total T, SHBG and albumin using the validated Vermeulen equation. Equilibrium dialysis is the reference method; the direct "analog" tests some labs use are unreliable. Our calculator does the calculation in one step.</p>
         <a href="/testosterone-test">Calculate free testosterone →</a>
       </div>
     </section>
@@ -170,8 +172,8 @@
     <section class="about">
       <div class="k">About these ranges</div>
       <p><b>Where the numbers come from.</b> The standard lab range is the internationally harmonised reference interval established by Travison et al. and adopted by the Endocrine Society — chosen because it is cross-calibrated to work across laboratories and countries, unlike assay-specific local ranges. The dashed "low" marker at 264 ng/dL is the Endocrine Society's threshold for low testosterone.</p>
-      <p><b>What "optimal" means here.</b> The optimal bands are functional targets from <em>The Testosterone Blueprint</em> (Chapter 2) — the levels most men in each decade feel best at. They are <b>not</b> an official reference range, and we label them that way throughout. They are informed by the age-related decline and symptom patterns documented in the studies cited below.</p>
-      <p><b>The other markers.</b> Free testosterone is calculated (Vermeulen method), not measured directly; SHBG and oestradiol follow standard adult-male reference intervals — SHBG ~10–57 nmol/L (age-adjusted), oestradiol ~10–40 pg/mL on a sensitive assay. All vary by laboratory and assay, so compare against the range printed on your own report.</p>
+      <p><b>What "optimal" means here.</b> The optimal bands are functional targets from <em>The Testosterone Blueprint</em> (Chapter 2) for each decade. They are <b>not</b> an official reference range, and we label them that way throughout. They are informed by the age-related decline and symptom patterns documented in the studies cited below.</p>
+      <p><b>The other markers.</b> Free testosterone is usually calculated (Vermeulen method); its normal range varies widely between methods and laboratories, so the tool flags only results below about 7 ng/dL (around 245 pmol/L), a cut-off some NHS services use. SHBG uses typical adult-male intervals of about 16–57 nmol/L under 50 and 20–82 nmol/L from 50. Oestradiol uses about 10–40 pg/mL on a sensitive assay, with no age-specific target, as none is established. All vary by laboratory and assay, so compare against the range printed on your own report.</p>
       <p><b>How we keep it honest.</b> Every physiological claim on this page is footnoted to a named source. Reference ranges vary by laboratory and assay, and a single result never tells the whole story — this page is educational and is not a diagnosis. We review the figures against current Endocrine Society and NHS guidance and update the "last reviewed" date accordingly.</p>
     </section>
 
@@ -186,7 +188,7 @@
         <li>Vermeulen A, Verdonck L, Kaufman JM. A Critical Evaluation of Simple Methods for the Estimation of Free Testosterone in Serum. <em>J Clin Endocrinol Metab.</em> 1999;84(10):3666–3672.</li>
         <li><em>The Testosterone Blueprint</em> (2026), Chapter 2: Reading Your Bloodwork (Table 1.3) — functional optimal ranges by age.</li>
       </ol>
-      <div class="rev">Compiled, sourced and editorially reviewed by The Testosterone Blueprint · Last reviewed 6 July 2026</div>
+      <div class="rev">Compiled, sourced and editorially reviewed by The Testosterone Blueprint · Last reviewed 9 November 2026</div>
     </section>
 
     <p class="disc"><b>Educational, not a diagnosis.</b> Standard ranges follow internationally harmonised reference intervals; optimal ranges reflect functional targets from <em>The Testosterone Blueprint</em> and are not official reference values. Levels vary by laboratory and assay. Always interpret results with a qualified clinician, especially before any treatment.</p>
@@ -194,72 +196,74 @@
   </article>
 </div></div>`;}})();
 (function(){
-  // ---- Marker configuration. Each marker's values are stored in its BASE unit (units[0]). ----
-  // Sources: Total T reference — Travison 2017 / Endocrine Society; optimal — The Testosterone Blueprint.
-  // SHBG — 10-57 nmol/L (age-specific <50:16-57, 50+:20-82). Oestradiol (men) — 10-40 pg/mL. Free T — calculated (Vermeulen).
+  // ---- Marker configuration. Values stored in BASE unit (units[0]). units: [label, multiplier base->unit, decimals]
+  // Total T reference: Travison 2017 harmonised 264-916 ng/dL (19-39, applied at all ages; no harmonised range for older men).
+  // Optimal targets: The Testosterone Blueprint, Ch. 2 (not official). Free T low cut-off ~7 ng/dL (~245 pmol/L, NHS Lothian CFT).
+  // SHBG <50:16-57, 50+:20-82 nmol/L. Oestradiol (men, sensitive assay) 10-40 pg/mL, no age-specific target.
   var MK={
     total:{
-      name:'Total Testosterone', sub:'Morning draw, fasted \u00b7 adult men',
-      note:'Reference: Endocrine Society \u00b7 optimal: The Blueprint',
+      name:'Total Testosterone', sub:'Morning draw, fasted · adult men',
+      note:'Reference: Travison 2017 / Endocrine Society · optimal target: The Blueprint',
       units:[['ng/dL',1,0],['nmol/L',0.03467,1]],
-      scale:[200,1250], step:100, low:264, useAge:true,
-      ageBands:[[29,[264,1200],[700,950],'19\u201329'],[39,[264,1100],[600,850],'30s'],[49,[264,1000],[500,750],'40s'],[59,[264,950],[400,650],'50s'],[999,[264,900],[350,550],'60+']],
+      hint:[[0,function(v){return v>0&&v<=50;},'This looks like a nmol/L value. UK and European labs usually report nmol/L; switch units above if so.'],
+            [1,function(v){return v>=100;},'This looks like a ng/dL value. US labs usually report ng/dL; switch units above if so.']],
+      scale:[200,1250], step:100, low:264, useAge:true, neutral:true,
+      ageBands:[[29,[264,916],[700,916],'19–29'],[39,[264,916],[600,850],'30s'],[49,[264,916],[500,750],'40s'],[59,[264,916],[400,650],'50s'],[999,[264,916],[350,550],'60+']],
       def:480,
       copy:{
-        optimal:['Optimal for your age','This is the sweet spot.','Your result sits in the functional range for your age \u2014 where most men report steady energy, drive, recovery and mood.'],
-        sub:['In range \u00b7 below optimal','A lab would call this normal.','It clears the lab minimum, but for your age it sits low in the range \u2014 the zone where many men feel flat despite a \u201cnormal\u201d result. Worth testing free T and SHBG.'],
-        above:['Above optimal \u00b7 in range','Higher than the target.','Above the functional optimal but within lab limits. Usually fine \u2014 worth a look if you are on any form of therapy.'],
-        low:['Below the \u201clow\u201d threshold','Under the low threshold.','Below the Endocrine Society threshold for low testosterone. Take symptoms and a repeat morning test to a doctor.'],
-        high:['Above the lab range','Over the standard ceiling.','Above the usual upper limit for your age. If you are not on therapy, confirm with a repeat morning test.']
+        optimal:['Within the optimal target','Inside the Blueprint target for your age.','Your result sits in the optimal target band The Testosterone Blueprint uses for your age group. Symptoms still matter more than any single number.'],
+        sub:['Normal · below optimal target','Within the normal range.','This is inside the normal lab range. It sits below the Blueprint optimal target for your age, which is a guide, not an official range, and is not a problem on its own. If you also have symptoms such as low energy, low libido or poor recovery, a repeat morning test with free T and SHBG is a sensible next step.'],
+        above:['Normal · above optimal target','Within the normal range.','Above the Blueprint optimal target for your age but within the normal lab range. Usually fine; worth a look if you are on any form of therapy.'],
+        low:['Below the “low” threshold','Under the low threshold.','Below 264 ng/dL (9.2 nmol/L), the threshold for low testosterone used by the Endocrine Society. A diagnosis needs symptoms and a repeat low morning result, so take both to a doctor.'],
+        high:['Above the normal range','Over the harmonised upper limit.','Above 916 ng/dL (31.8 nmol/L), the upper limit of the harmonised range. If you are not on therapy, confirm with a repeat morning test.']
       }
     },
     free:{
-      name:'Free Testosterone', sub:'Calculated (Vermeulen) \u00b7 adult men',
-      note:'Calculated from total T, SHBG & albumin \u2014 not measured directly',
-      units:[['ng/dL',1,0],['pmol/L',34.67,0]],
-      scale:[0,35], step:5, useAge:true, calc:true,
-      ageBands:[[29,[9,30],[18,30],'19\u201329'],[39,[9,30],[16,28],'30s'],[49,[9,30],[14,26],'40s'],[59,[9,30],[12,23],'50s'],[999,[9,30],[11,21],'60+']], def:12,
+      name:'Free Testosterone', sub:'Usually calculated (Vermeulen) · adult men',
+      note:'Ranges vary by method and lab · compare with your own report',
+      units:[['ng/dL',1,1],['pg/mL',10,0],['pmol/L',34.67,0]],
+      hint:[[0,function(v){return v>60;},'This looks like a pg/mL or pmol/L value. Choose the unit printed on your report.'],
+            [2,function(v){return v>0&&v<40;},'This looks like a ng/dL value. Choose the unit printed on your report.']],
+      scale:[0,35], step:5, low:7, useAge:true, calc:true, neutral:true,
+      ageBands:[[29,[7,30],[18,30],'19–29'],[39,[7,30],[16,28],'30s'],[49,[7,30],[14,26],'40s'],[59,[7,30],[12,23],'50s'],[999,[7,30],[11,21],'60+']], def:12,
       copy:{
-        optimal:['Optimal free testosterone','The active fraction looks healthy.','This is the testosterone that actually reaches your tissues \u2014 a good sign your usable level matches your total.'],
-        sub:['Low-normal free T','Often the real story.','Your total may look fine, but the free, active fraction is low \u2014 the classic picture when SHBG is high, and often what is behind \u201cnormal but not well\u201d.'],
-        above:['High free T','Above the usual range.','Common on testosterone therapy; worth confirming the clinical context.'],
-        low:['Low free testosterone','Below the calculated range.','With symptoms, this is a more meaningful number than total T. Discuss with a clinician.'],
-        high:['High free testosterone','Above the reference.','Confirm with your clinician, particularly if you are not on therapy.']
+        optimal:['Within the optimal target','Inside the Blueprint target for your age.','Your free, active testosterone sits in the optimal target band The Testosterone Blueprint uses for your age group.'],
+        sub:['Normal · below optimal target','Within the normal range.','This is not low. It sits below the Blueprint optimal target for your age, which is a guide, not an official range. Free T results vary a lot between methods and labs, so compare with the range on your report, and if you have symptoms, discuss it alongside total T and SHBG.'],
+        above:['Normal · above optimal target','Within the normal range.','Above the Blueprint optimal target for your age. Common on testosterone therapy; worth confirming the clinical context.'],
+        low:['Low free testosterone','Below the usual cut-off.','Under about 7 ng/dL (around 245 pmol/L), a cut-off some NHS services use for low calculated free T. With symptoms, discuss it with a clinician alongside total T and SHBG.'],
+        high:['High free testosterone','Above the usual range.','Confirm with your clinician, particularly if you are not on therapy.']
       }
     },
     shbg:{
-      name:'SHBG', sub:'Sex hormone-binding globulin \u00b7 adult men',
-      note:'Rises with age \u00b7 read alongside total and free T',
+      name:'SHBG', sub:'Sex hormone-binding globulin · adult men',
+      note:'Rises with age · read alongside total and free T',
       units:[['nmol/L',1,0]],
       scale:[0,120], step:20, useAge:true,
       ageBands:[[49,[16,57],[20,45],'under 50'],[999,[20,82],[25,55],'50+']],
       def:55,
       copy:{
         optimal:['Balanced SHBG','A healthy carrier level.','Mid-range SHBG leaves a good share of your testosterone free and usable.'],
-        sub:['Low-side SHBG','Check the metabolic side.','Lower SHBG raises free testosterone, but is often linked to insulin resistance, excess weight or fatty liver \u2014 worth a metabolic look.'],
-        above:['High-side SHBG','Binds more testosterone.','Higher SHBG locks up more testosterone, lowering the free, active fraction \u2014 so total T can read \u201cnormal\u201d while you feel low. Common with age.'],
-        low:['Very low SHBG','Below the reference range.','Usually points to metabolic factors \u2014 insulin resistance or obesity. Worth investigating.'],
+        sub:['Low-side SHBG','Check the metabolic side.','Lower SHBG raises free testosterone, but is often linked to insulin resistance, excess weight or fatty liver — worth a metabolic look.'],
+        above:['High-side SHBG','Binds more testosterone.','Higher SHBG locks up more testosterone, lowering the free, active fraction — so total T can read “normal” while you feel low. Common with age.'],
+        low:['Very low SHBG','Below the reference range.','Usually points to metabolic factors — insulin resistance or obesity. Worth investigating.'],
         high:['High SHBG','Above the reference range.','This locks up more testosterone; free T is the number to check here. Can rise with age, thyroid or liver factors.']
       }
     },
     e2:{
-      name:'Oestradiol', sub:'Sensitive/LC-MS assay \u00b7 adult men',
-      note:'Needs a sensitive/LC-MS assay \u2014 standard assays misread male levels',
+      name:'Oestradiol', sub:'Sensitive/LC-MS assay · adult men',
+      note:'Needs a sensitive/LC-MS assay — standard assays misread male levels',
       units:[['pg/mL',1,0],['pmol/L',3.671,0]],
-      scale:[0,60], step:10, low:10, useAge:true,
-      ageBands:[[29,[10,40],[22,34],'19\u201329'],[39,[10,40],[20,32],'30s'],[49,[10,40],[18,30],'40s'],[59,[10,40],[17,28],'50s'],[999,[10,40],[15,26],'60+']], def:18,
+      scale:[0,60], step:10, low:10, useAge:false, ref:[10,40], opt:null, def:25,
       copy:{
-        optimal:['Optimal oestradiol','Men need oestrogen too.','Oestradiol in the sweet spot supports bone density, libido, mood and heart health.'],
-        sub:['Low-normal oestradiol','On the low side.','Very low E2 in men is linked to bone loss, joint pain and low libido \u2014 it is not \u201cbetter\u201d to be low.'],
-        above:['High-normal oestradiol','Upper end of normal.','Usually fine; if you are on TRT or carrying excess weight, aromatase can push it higher.'],
-        low:['Low oestradiol','Below 10 pg/mL.','Associated with bone loss and vasomotor symptoms in men, and often tracks with low testosterone.'],
+        optimal:['Within the male range','In the usual range.','Within the usual adult male range on a sensitive assay. Men need some oestrogen for bone, libido and mood. Ranges vary by lab, so compare with the range on your own report.'],
+        low:['Low oestradiol','Below 10 pg/mL.','Very low oestradiol in men is associated with bone loss and often tracks with low testosterone. Discuss it with your clinician.'],
         high:['High oestradiol','Above the male range.','Common with higher body fat or TRT. Discuss aromatase and next steps with your clinician.']
       }
     }
   };
   var ORDER=['total','free','shbg','e2'];
 
-  var st={mk:'total', ui:0, age:45, val:{}};
+  var st={mk:'total', ui:0, age:45, val:{}, bad:false};
   ORDER.forEach(function(k){st.val[k]=MK[k].def;});
 
   function $(id){return document.getElementById(id);}
@@ -267,15 +271,37 @@
       lowLine=$('lowLine'), lowLbl=$('lowLbl'), lgLow=$('lgLow'), needle=$('needle'),
       readout=$('readout'), ticks=$('ticks'), verdict=$('verdict'), vChip=$('vChip'),
       vHead=$('vHead'), vBody=$('vBody'), mName=$('mName'), mSub=$('mSub'), mNote=$('mNote'),
-      ftCard=$('ftCard'), ageCtl=$('ageCtl'), unitCtl=$('unitCtl'),
-      u1=$('u1'), u2=$('u2'), age=$('age'), ageOut=$('ageOut'), val=$('val'), unitTag=$('unitTag');
+      ftCard=$('ftCard'), ageCtl=$('ageCtl'), unitCtl=$('unitCtl'), uHint=$('uHint'),
+      ub=[$('u1'),$('u2'),$('u3')], age=$('age'), ageOut=$('ageOut'), val=$('val'), unitTag=$('unitTag');
+  var lgOpt=document.querySelector('#tbrx-instrument .l-opt');lgOpt=lgOpt?lgOpt.parentNode:null;
+
+  // Scoped styles for the neutral verdict, hint and input notice (no change to ranges.css needed).
+  var css=document.createElement('style');
+  css.textContent='#tbrx-instrument .s-norm .chip{background:#e8edf4;color:#2b3a52}#tbrx-instrument .s-norm .dot{background:#7f8da3}'+
+    '#tbrx-instrument .s-none .chip{background:#e8edf4;color:#2b3a52}#tbrx-instrument .s-none .dot{background:#b7c0cd}'+
+    '#tbrx-instrument .tbrx-hint{margin-top:10px;font-size:13px;line-height:1.45;color:#8a5a00;background:#fff4dc;border:1px solid #f0d9a6;border-radius:9px;padding:8px 11px;white-space:normal;overflow-wrap:break-word;max-width:100%;box-sizing:border-box}'+
+    '#tbrx-instrument .tbrx-hint[hidden]{display:none}#tbrx-instrument .seg button[hidden]{display:none}';
+  document.head.appendChild(css);
 
   function C(){return MK[st.mk];}
-  function U(){return C().units[st.ui];}          // [label, multiplier base->unit]
-  function base(){return st.val[st.mk];}          // stored in base unit
+  function U(){return C().units[st.ui];}
+  function base(){return st.val[st.mk];}
   function clamp(x,a,b){return Math.max(a,Math.min(b,x));}
   function pos(v){var s=C().scale;return clamp((v-s[0])/(s[1]-s[0])*100,0,100);}
   function disp(v){return (v*U()[1]).toFixed(U()[2]);}
+  function fmt(v,u){return (v*u[1]).toFixed(u[2]);}
+  // Value as shown on screen, converted back to base, so the verdict always matches the number displayed.
+  function shown(){var u=U();return (+(base()*u[1]).toFixed(u[2]))/u[1];}
+
+  // Accepts "1,050" / "1 050" (thousands) and "15,5" (decimal comma). Rejects "<92", text, negatives.
+  function parseNum(raw){
+    var s=String(raw).trim().replace(/ /g,' ');
+    if(s==='')return null;
+    if(/^\d{1,3}([ ,]\d{3})+(\.\d+)?$/.test(s))s=s.replace(/[ ,]/g,'');
+    else if(/^\d+,\d+$/.test(s))s=s.replace(',','.');
+    if(!/^\d+(\.\d+)?$/.test(s)&&!/^\.\d+$/.test(s))return NaN;
+    return parseFloat(s);
+  }
 
   function bands(){
     var c=C(),b,i;
@@ -286,27 +312,38 @@
   function classify(v,B){
     if(v<B.ref[0])return 'low';
     if(v>B.ref[1])return 'high';
+    if(!B.opt)return 'optimal';
     if(v>=B.opt[0]&&v<=B.opt[1])return 'optimal';
     if(v<B.opt[0])return 'sub';
     return 'above';
   }
   function buildTicks(){
     var s=C().scale, step=C().step, h='', v;
-    for(v=s[0];v<=s[1];v+=step){var big=(((v-s[0])/step)%2===0);
+    for(v=s[0];v<=s[1];v+=step){var big=(((v-s[0])/step)%2===0)&&!(typeof C().low==='number'&&Math.abs(v-C().low)<step*0.8);
       h+='<div class="tick" style="left:'+pos(v)+'%"><i></i>'+(big?'<span>'+disp(v)+'</span>':'')+'</div>';}
     ticks.innerHTML=h;
   }
+  function updateHint(){
+    var c=C(),h=c.hint||[],msg='',i,uv=base()*U()[1];
+    if(!st.bad)for(i=0;i<h.length;i++){if(h[i][0]===st.ui&&h[i][1](uv)){msg=h[i][2];break;}}
+    uHint.textContent=msg; uHint.hidden=!msg;
+  }
+  function setUnitButtons(){
+    var c=C();
+    ub.forEach(function(b,i){if(!b)return;var u=c.units[i];
+      if(u){b.textContent=u[0];b.hidden=false;b.setAttribute('aria-pressed',i===st.ui?'true':'false');}
+      else{b.hidden=true;b.setAttribute('aria-pressed','false');}});
+    unitCtl.style.display=c.units.length>1?'':'none';
+    unitTag.textContent=U()[0];
+  }
 
   function selectMarker(k){
-    st.mk=k; st.ui=0;
+    st.mk=k; st.ui=0; st.bad=false;
     ORDER.forEach(function(m){var t=document.querySelector('.tab[data-mk="'+m+'"]');if(t)t.setAttribute('aria-selected',m===k);});
     var c=C();
     mName.textContent=c.name; mSub.textContent=c.sub;
     if(c.note){mNote.textContent=c.note; mNote.hidden=false;} else {mNote.hidden=true;}
-    u1.textContent=c.units[0][0]; u1.setAttribute('aria-pressed','true');
-    if(c.units[1]){u2.textContent=c.units[1][0]; u2.setAttribute('aria-pressed','false'); unitCtl.style.display='';}
-    else {unitCtl.style.display='none';}
-    unitTag.textContent=c.units[0][0];
+    setUnitButtons();
     ageCtl.style.display=c.useAge?'':'none';
     var showLow=(typeof c.low==='number');
     lowLine.style.display=showLow?'':'none'; if(lgLow)lgLow.style.display=showLow?'':'none';
@@ -316,34 +353,48 @@
   }
 
   function render(){
-    var c=C(), B=bands(), p, cls;
+    var c=C(), B=bands(), p, cls, v;
     if(c.useAge)ageOut.textContent=st.age;
     bandLab.style.left=pos(B.ref[0])+'%'; bandLab.style.width=(pos(B.ref[1])-pos(B.ref[0]))+'%';
-    bandOpt.style.left=pos(B.opt[0])+'%'; bandOpt.style.width=(pos(B.opt[1])-pos(B.opt[0]))+'%';
-    optCap.textContent=B.lbl?('Optimal \u00b7 '+B.lbl):'Optimal';
-    if(typeof c.low==='number'){lowLine.style.left=pos(c.low)+'%'; if(lowLbl)lowLbl.textContent=disp(c.low)+' \u00b7 low';}
-    p=pos(base()); needle.style.left=p+'%'; readout.style.left=p+'%';
+    if(B.opt){bandOpt.style.display='';bandOpt.style.left=pos(B.opt[0])+'%'; bandOpt.style.width=(pos(B.opt[1])-pos(B.opt[0]))+'%';}
+    else bandOpt.style.display='none';
+    if(lgOpt)lgOpt.style.display=B.opt?'':'none';
+    optCap.textContent=B.lbl?('Optimal · '+B.lbl):'Optimal';
+    if(typeof c.low==='number'){lowLine.style.left=pos(c.low)+'%'; if(lowLbl)lowLbl.textContent=disp(c.low)+' · low';}
+    updateHint();
+    if(st.bad){
+      needle.style.display='none'; readout.style.display='none';
+      verdict.className='verdict s-none';
+      vChip.textContent='Number needed';
+      vHead.textContent='Enter your result as a number.';
+      vBody.textContent='Type the number only, for example 15.5. A result shown as "<" or ">" a value is outside what the lab measured precisely, so the tool cannot place it; ask your clinician how to read it.';
+      return;
+    }
+    needle.style.display=''; readout.style.display='';
+    v=shown();
+    p=pos(v); needle.style.left=p+'%'; readout.style.left=p+'%';
     readout.innerHTML=disp(base())+'<small>'+U()[0]+'</small>';
-    cls=classify(base(),B);
-    verdict.className='verdict s-'+cls;
+    cls=classify(v,B);
+    verdict.className='verdict s-'+((c.neutral&&(cls==='sub'||cls==='above'))?'norm':cls);
     var s=c.copy[cls]; vChip.textContent=s[0]; vHead.textContent=s[1]; vBody.textContent=s[2];
   }
 
   function setUnit(i){
     if(i===st.ui||!C().units[i])return; st.ui=i;
-    u1.setAttribute('aria-pressed',i===0); u2.setAttribute('aria-pressed',i===1);
-    unitTag.textContent=U()[0]; val.value=disp(base());
+    setUnitButtons();
+    if(!st.bad)val.value=disp(base());
     buildTicks(); render();
   }
 
   ORDER.forEach(function(m){var t=document.querySelector('.tab[data-mk="'+m+'"]');
     if(t)t.addEventListener('click',function(){selectMarker(m);});});
   age.addEventListener('input',function(){st.age=+age.value; if(C().useAge)render();});
-  val.addEventListener('input',function(){var r=parseFloat(val.value.replace(',','.'));if(isNaN(r))return;
-    st.val[st.mk]=clamp(r/U()[1],0,C().scale[1]*1.6); render();});
-  val.addEventListener('blur',function(){val.value=disp(base());});
-  u1.addEventListener('click',function(){setUnit(0);});
-  u2.addEventListener('click',function(){setUnit(1);});
+  val.addEventListener('input',function(){var r=parseNum(val.value);
+    if(r===null)return;                       // empty while typing: keep showing the last valid result
+    if(isNaN(r)){st.bad=true;render();return;}
+    st.bad=false; st.val[st.mk]=r/U()[1]; render();});
+  val.addEventListener('blur',function(){if(!st.bad)val.value=disp(base());});
+  ub.forEach(function(b,i){if(b)b.addEventListener('click',function(){setUnit(i);});});
 
   selectMarker('total');
 })();
