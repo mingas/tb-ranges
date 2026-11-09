@@ -319,7 +319,7 @@
   }
   function buildTicks(){
     var s=C().scale, step=C().step, h='', v;
-    for(v=s[0];v<=s[1];v+=step){var big=(((v-s[0])/step)%2===0)&&!(typeof C().low==='number'&&Math.abs(v-C().low)<step*0.8);
+    for(v=s[0];v<=s[1];v+=step){var big=(((v-s[0])/step)%2===0)&&!(typeof C().low==='number'&&Math.abs(v-C().low)<step*1.5);
       h+='<div class="tick" style="left:'+pos(v)+'%"><i></i>'+(big?'<span>'+disp(v)+'</span>':'')+'</div>';}
     ticks.innerHTML=h;
   }
@@ -399,4 +399,4 @@
   selectMarker('total');
 })();
 /* Deliver the ranges PDF when the Ranges Tool email form is submitted */
-(function(){var f=document.querySelector('#ranges-email form');if(f){f.addEventListener('submit',function(){window.open('https://cdn.jsdelivr.net/gh/mingas/tb-ranges@main/Testosterone-Optimal-Ranges-and-Blood-Test-Checklist.pdf','_blank');});}})();
+(function(){var f=document.querySelector('#ranges-email form');if(f){f.addEventListener('submit',function(){window.open('https://cdn.jsdelivr.net/gh/mingas/tb-ranges@3be9ee2413ab315bd6899f8e73e02812dcbff0f0/Testosterone-Optimal-Ranges-and-Blood-Test-Checklist.pdf','_blank');});}})();
